@@ -78,4 +78,82 @@
         </div>
     </div>
 </section>
+<section class="bg-black py-24">
+    <div class="container mx-auto px-6">
+
+        <div class="max-w-4xl ml-0 md:ml-56 mb-14">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                Browse popular, trending, and upcoming Korean dramas
+            </h2>
+
+            <p class="text-gray-400 text-lg">
+                Discover the most talked-about Korean dramas and explore what’s worth watching this week.
+            </p>
+        </div>
+
+        <div class="bg-gray-900 rounded-2xl p-8 max-w-5xl mx-auto">
+
+            <div class="flex items-center justify-between mb-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-white">
+                        Top 3 Dramas This Week
+                    </h3>
+                    <p class="text-sm text-gray-400">
+                        The most popular Korean dramas right now
+                    </p>
+                </div>
+                 <a href="#" class="hidden md:inline text-sm text-red-500 hover:underline">
+                    See more
+                </a>
+            </div>
+
+            <div class="h-px bg-gray-800 mb-6"></div>
+
+            <div class="space-y-6">
+
+                <div class="flex items-center gap-4">
+                    <span class="text-3xl font-bold text-gray-600 w-6">1</span>
+                    <img src="https://images.justwatch.com/poster/340070498/s166/season-1.avif" alt="Drama 1"
+                        class="w-20 h-28 object-cover rounded-lg">
+                    <div>
+                        <h4 class="text-white font-medium">
+                            Love Me
+                        </h4>
+                        <p class="text-sm text-gray-400">
+                            Romance
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <span class="text-3xl font-bold text-gray-600 w-6">2</span>
+                    <img src="https://images.justwatch.com/poster/317328747/s166/season-1.avif" alt="Drama 2"
+                        class="w-20 h-28 object-cover rounded-lg">
+                    <div>
+                        <h4 class="text-white font-medium">
+                            Taxi Driver
+                        </h4>
+                        <p class="text-sm text-gray-400">
+                            Action
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <span class="text-3xl font-bold text-gray-600 w-6">3</span>
+                    <img src="https://images.justwatch.com/poster/330115674/s166/the-haunted-palace.avif" alt="Drama 3"
+                        class="w-20 h-28 object-cover rounded-lg">
+                    <div>
+                        <h4 class="text-white font-medium">
+                           The Haunted Palace
+                        </h4>
+                        <p class="text-sm text-gray-400">
+                           Science-Fiction
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 @endsection
