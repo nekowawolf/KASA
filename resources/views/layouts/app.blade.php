@@ -13,6 +13,7 @@
     <main>
         @yield('content')
     </main>
+    @include('components.footer')
 
 </body>
 </html>
