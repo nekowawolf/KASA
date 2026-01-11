@@ -1,4 +1,4 @@
-<div class="min-w-[160px] hover:scale-105 transition duration-300">
+<div class="min-w-[160px]">
     <a href="#">
         <img 
             src="{{ $image }}" 
