@@ -13,7 +13,7 @@
             KASA is a Korean drama streaming platform where you can watch curated series with seamless access and an enjoyable viewing experience.
         </p>
 
-        <a href="#"
+        <a href="/dramas"
             class="inline-flex items-center px-6 py-3 font-medium text-white rounded-lg"
             style="background-color:#A10B0B;">
             Explore Now
@@ -102,7 +102,7 @@
                         The most popular Korean dramas right now
                     </p>
                 </div>
-                 <a href="#" class="hidden md:inline text-sm text-[#A10B0B] hover:underline">
+                 <a href="/dramas" class="hidden md:inline text-sm text-[#A10B0B] hover:underline">
                     See more
                 </a>
             </div>
@@ -210,11 +210,12 @@
             Find the best Korean dramas on KASA
         </h2>
         <div class="flex justify-center">
-            <a href="#" 
+            <a href="/dramas" 
                 class="bg-[#A10B0B] hover:bg-[#8B0909] text-white font-semibold px-8 py-3 rounded-lg transition inline-block">
                     Discover K-Drama Now
             </a>
         </div>
     </div>
 </section>
+
 @endsection
