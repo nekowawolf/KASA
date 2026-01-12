@@ -15,10 +15,10 @@ Route::get('/dramas/{slug}', [DramaController::class, 'show'])->name('dramas.sho
 
 Route::prefix('admin')->name('admin.')->group(function () {
 
-    Route::get('login', [AuthController::class, 'showLogin']);
+    Route::get('login', [AuthController::class, 'showLogin'])->name('login');
     Route::post('login', [AuthController::class, 'login']);
 
-    Route::middleware('auth:admin')->group(function () {
+    Route::middleware('auth.admin')->group(function () {
 
         Route::get('dashboard', [DashboardController::class, 'index'])
             ->name('dashboard');
