@@ -217,5 +217,59 @@
         </div>
     </div>
 </section>
+home.blade.php
+<section class="bg-black py-24">
+  <div class="container mx-auto px-6 text-center">
 
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-12">
+        Frequently Asked <span class="text-[#A10B0B]">Questions</span>
+    </h2>
+    <div id="faq-accordion" class="max-w-3xl mx-auto space-y-4 text-left">
+      <div class="border border-gray-700 rounded-lg overflow-hidden">
+        <button type="button"
+                class="w-full px-6 py-4 text-gray-400 font-medium flex justify-between items-center hover:text-white transition"
+                data-accordion-target="#faq1" aria-expanded="false">
+          <span>Can I watch K-dramas for free on KASA?</span>
+          <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="faq1" class="px-6 py-4 text-gray-400 hidden">
+          Yes! KASA provides links to watch popular Korean dramas for free from legal streaming sources.
+        </div>
+      </div>
+
+      <div class="border border-gray-700 rounded-lg overflow-hidden">
+        <button type="button"
+                class="w-full px-6 py-4 text-gray-400 font-medium flex justify-between items-center hover:text-white transition"
+                data-accordion-target="#faq2" aria-expanded="false">
+          <span>Do I need to create an account?</span>
+          <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="faq2" class="px-6 py-4 text-gray-400 hidden">
+          No account is required to browse dramas and watch via the links. Accounts are optional for saving favorites.
+        </div>
+      </div>
+
+      <div class="border border-gray-700 rounded-lg overflow-hidden">
+        <button type="button"
+                class="w-full px-6 py-4 text-gray-400 font-medium flex justify-between items-center hover:text-white transition"
+                data-accordion-target="#faq3" aria-expanded="false">
+          <span>Can I watch on mobile or tablet?</span>
+          <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="faq3" class="px-6 py-4 text-gray-400 hidden">
+          Absolutely! KASA is fully responsive and works on all devices, including smartphones, tablets, and desktops.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 @endsection
