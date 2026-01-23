@@ -21,5 +21,7 @@
 
     @include('components.footer')
 
+    @yield('extra-js')
+
 </body>
 </html>

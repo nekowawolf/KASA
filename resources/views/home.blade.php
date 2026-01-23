@@ -2,6 +2,10 @@
 
 @section('title', 'KASA')
 
+@section('extra-js')
+    @vite(['resources/js/faq.js'])
+@endsection
+
 @section('content')
     <section class="w-full bg-gradient-to-b from-blue-800/40 to-black">
             <div class="container mx-auto px-6 py-24 text-center">

@@ -1,20 +1,24 @@
+console.log('FAQ JS loaded');
+
 document.addEventListener('DOMContentLoaded', () => {
-    const buttons = document.querySelectorAll('#faq-accordion button');
+    const faqButtons = document.querySelectorAll('#faq-accordion button');
 
-    buttons.forEach(button => {
+    faqButtons.forEach(button => {
         button.addEventListener('click', () => {
-            const targetId = button.getAttribute('data-accordion-target');
-            const target = document.querySelector(targetId);
+            const target = document.querySelector(button.dataset.accordionTarget);
+            const isOpen = !target.classList.contains('hidden');
 
-            const expanded = button.getAttribute('aria-expanded') === 'true';
+            document.querySelectorAll('#faq-accordion > div > div').forEach(div => div.classList.add('hidden'));
+            document.querySelectorAll('#faq-accordion button').forEach(btn => btn.setAttribute('aria-expanded', 'false'));
 
-            button.setAttribute('aria-expanded', !expanded);
-            target.classList.toggle('hidden');
-
-            const svg = button.querySelector('svg');
-            if(svg){
-                svg.classList.toggle('rotate-180');
+            if (!isOpen) {
+                target.classList.remove('hidden');
+                button.setAttribute('aria-expanded', 'true');
             }
+
+            console.log('Button clicked:', button.innerText.trim(), 'Currently open:', isOpen);
         });
     });
+
+    console.log('FAQ event listeners attached successfully.');
 });
